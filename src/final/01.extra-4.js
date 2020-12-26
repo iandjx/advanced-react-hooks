@@ -3,7 +3,7 @@
 // http://localhost:3000/isolated/final/01.extra-4.js
 
 import * as React from 'react'
-
+// So use this for reference. Forget the rest
 function countReducer(state, action) {
   const {type, step} = action
   switch (type) {

@@ -63,6 +63,8 @@ function PokemonInfo({pokemonName}) {
     status: pokemonName ? 'pending' : 'idle',
   })
 
+  // we hide most of the implementation details and only have  user to pass the
+  // fetch function to run
   React.useEffect(() => {
     if (!pokemonName) {
       return

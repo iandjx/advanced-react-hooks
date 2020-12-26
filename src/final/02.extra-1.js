@@ -54,6 +54,9 @@ function useAsync(asyncCallback, initialState) {
 }
 
 function PokemonInfo({pokemonName}) {
+  //this tells us that asyncCallback function will not change unless pokemonName changes
+  // this allows us to put asyncCallback as our dependency
+  // another way is just to put async callback function inside the useEffecct block
   const asyncCallback = React.useCallback(() => {
     if (!pokemonName) {
       return

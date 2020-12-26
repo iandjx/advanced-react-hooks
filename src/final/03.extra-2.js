@@ -4,7 +4,10 @@
 
 // you can edit this here and look at the isolated page or you can copy/paste
 // this in the regular exercise file.
-
+/* 
+This is complex example of creating a custom hook using useContext and useReducer with the previous
+useAsync hook created earlier
+*/
 import * as React from 'react'
 import {useAsync} from '../utils'
 import {

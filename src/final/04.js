@@ -5,6 +5,7 @@ import * as React from 'react'
 
 function MessagesDisplay({messages}) {
   const containerRef = React.useRef()
+  //when a new message is added. run useLayoutEffect before the browser paints the screen
   React.useLayoutEffect(() => {
     containerRef.current.scrollTop = containerRef.current.scrollHeight
   })
